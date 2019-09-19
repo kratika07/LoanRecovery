@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottombg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.TaskDetailActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/topbg"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/mback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/ic_back_arrow" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Customer Detail"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/mback"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_marginTop="-90dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:contentPadding="10dp">
+                  <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<LinearLayout
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="50dp"
+        android:text="Customer Name:"
+        android:textSize="15dp"
+        android:id="@+id/mTextCutomerName"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:text=""
+        android:textSize="15dp"
+        android:layout_weight="0.5"
+        android:visibility="gone"
+        android:id="@+id/mCustomerName"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Personal Mobile No.:"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/mTextPersonalMobile"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mPersonalMobile"
+                        android:layout_height="wrap_content" /></LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Residential Address:"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/mTextResidentialAddress"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mResidencialAddress"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+
+
+
+<!--
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/mTextCompanyName"
+                        android:text="Company Name:"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:id="@+id/mCompanyName"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+-->
+
+
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Office Address:"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:id="@+id/mTextOfficeAddress"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:id="@+id/mOfficeAddress"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+
+
+           <!--     <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Office Landmark:"
+                        android:id="@+id/mTextOfficeLandmark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:id="@+id/mOfficeLandmark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+
+           <!--     <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Office city:"
+                        android:textSize="15dp"
+                        android:id="@+id/mTextOfficeCity"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:id="@+id/mOfficeCity"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+
+               <!-- <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Office state:"
+                        android:textSize="15dp"
+                        android:id="@+id/mTextOfficeState"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:id="@+id/mOfficeState"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Office mobile:"
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:id="@+id/mTextOfficeMobile"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mOfficeMobile"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Bank name"
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:id="@+id/mTextBankName"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mBankName"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Financer:"
+                        android:textSize="15dp"
+                        android:id="@+id/mTextFinancer"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mFinancer"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Loan Type:"
+                        android:textSize="15dp"
+                        android:id="@+id/mTextLoanType"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mLoanType"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Verification Type:"
+                        android:textSize="15dp"
+                        android:id="@+id/mTextVerficationType"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/mVerificationType"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                      <LinearLayout
+                          android:weightSum="2"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:layout_width="50dp"
+                              android:text="Emi Amount:"
+                              android:textSize="15dp"
+                              android:id="@+id/mTextEmiAmount"
+                              android:textStyle="bold"
+                              android:visibility="gone"
+
+                              android:layout_weight="1"
+
+                              android:layout_height="wrap_content" />
+                          <TextView
+                              android:layout_width="50dp"
+                              android:text=""
+                              android:textSize="15dp"
+                              android:visibility="gone"
+                              android:layout_weight="1"
+                              android:id="@+id/mEmiAmount"
+                              android:layout_height="wrap_content" />
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:weightSum="2"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:layout_width="50dp"
+                              android:text="Due Emi:"
+                              android:textSize="15dp"
+                              android:visibility="gone"
+
+                              android:id="@+id/mTextDueEmi"
+                              android:textStyle="bold"
+                              android:layout_weight="1"
+
+                              android:layout_height="wrap_content" />
+                          <TextView
+                              android:layout_width="50dp"
+                              android:text=""
+                              android:textSize="15dp"
+                              android:visibility="gone"
+                              android:layout_weight="1"
+                              android:id="@+id/mDueEMi"
+                              android:layout_height="wrap_content" />
+
+                      </LinearLayout>
+
+            </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

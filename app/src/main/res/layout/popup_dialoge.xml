@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Feedback"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <Spinner
+        android:id="@+id/mSpinnerOption"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:padding="5dp"
+        android:background="@drawable/shape"
+        android:id="@+id/mEditExtraText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="write some thing(optional)"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="5" />
+
+
+    <Button
+        android:id="@+id/mBtnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_corner"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottombg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <ImageView
+            android:id="@+id/mheader_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/topbg"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select Your Role"
+            android:textColor="@color/white"
+            android:id="@+id/mselecttext"
+            android:layout_marginLeft="30dp"
+            android:textSize="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mtelecaller"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/mheader_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-95dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/telecaller"
+            app:civ_border_width="8dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mtext"
+            android:text="Telecaller"
+            android:layout_below="@+id/mtelecaller"
+            android:layout_height="wrap_content" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fieldexecutive"
+                android:layout_below="@+id/mtext"
+                android:id="@+id/mfieldexecutive"
+                app:civ_border_width="8dp"
+                app:civ_border_color="@color/colorPrimary"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/mfieldexecutive"
+                android:layout_marginTop="15dp"
+                android:id="@+id/msectext"
+                android:layout_centerHorizontal="true"
+                android:text="Field Executive"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/msectext"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dummy"
+                app:civ_border_width="8dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/mrecoveryagent"
+                app:civ_border_color="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:id="@+id/third"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mrecoveryagent"
+                android:text="Recovery Agent"
+                android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+</ScrollView>

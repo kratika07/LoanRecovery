@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parentrel"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/dummy"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:civ_border_width="4dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/fname"
+            android:textSize="20dp"
+            android:text="john carter"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/sname"
+            android:text="vehicle type:2 wheeler"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tname"
+            android:text="Area:california"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:text="call"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_corner"
+            android:drawableLeft="@drawable/callwhitebtn"
+            android:layout_height="30dp" />
+
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_corner"
+            android:drawableLeft="@drawable/task"
+            android:text="Task"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

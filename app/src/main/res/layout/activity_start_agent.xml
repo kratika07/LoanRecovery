@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottombg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".Activities.TaskDetailActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/topbg"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/mImgBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/ic_back_arrow" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Verification Form"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/mImgBackButton"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_marginTop="-90dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/mTextFirstname"
+                            android:text="Firstname"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/mEditFirstname"
+                            android:hint="firstname"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextSecondtname"
+                                android:text="MiddleName"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditSecondname"
+                                android:hint="middlename"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextLastname"
+                                android:text="LastName"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditlastname"
+                                android:hint="Lastname"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextAddress"
+                                android:text="Address1"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditAddress1"
+                                android:hint="Address1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                           <!-- <EditText
+                                android:id="@+id/mEditstate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:hint="State" />-->
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextAddress2"
+                                android:text="Address2"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditAddress2"
+                                android:hint="Address2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextPhone"
+                                android:text="Mobile no."
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditMobile"
+                                android:hint="Mobile no."
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextnoEmiDue"
+                                android:text="No. of Emi Due"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditEmiDue"
+                                android:hint="No. of Emi Due"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextDueemiamount"
+                                android:text="Due Emi Amount"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:editable="false"
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditdueemiamount"
+                                android:hint="Due Emi Amount"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextEmiAmountrecieved"
+                                android:text="Emi Amount recieved"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditEmiamountrecieved"
+                                android:hint="Emi Amount recieved"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextDate"
+                                android:text="Date"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:clickable="true"
+                                android:editable="false"
+                                android:id="@+id/mEditDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:hint="Date" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextEmiAmountrecievedby"
+                                android:text="Amount Recieved By"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditEmiAmountrecievedby"
+                                android:hint="Amount Recieved By"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextState"
+                                android:text="State"
+                                android:layout_height="wrap_content"/>
+
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditState"
+                                android:hint="State"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextcity"
+                                android:text="City"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditcity"
+                                android:hint="City"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextvillage"
+                                android:text="Village"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditvillage"
+                                android:hint="Village"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextdob"
+                                android:text="Date Of Birth"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditdob"
+                                android:hint="Date Of Birth"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextbranchname"
+                                android:text="Branch Name"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditbranchname"
+                                android:hint="Branch Name"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextBankName"
+                                android:text="Bank Name"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditbankname"
+                                android:hint="Bank Name"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextLaoanType"
+                                android:text="Loan Type"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditloantype"
+                                android:hint="Loan Type"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextpaymentmethod"
+                                android:text="PaymentMethod"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/mEditpaymentmethod"
+                                android:hint="paymentmethod"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextgender"
+                                android:text="Gender"
+                                android:layout_height="wrap_content"/>
+
+                            <RadioGroup
+                                android:id="@+id/radioSex"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <RadioButton
+                                    android:id="@+id/radioMale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/radio_male"
+                                    android:checked="true" />
+
+                                <RadioButton
+                                    android:id="@+id/radioFemale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/radio_female" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextSignatureofagent"
+                                android:text="Signature of Agent"
+                                android:layout_height="wrap_content"/>
+
+
+
+                            <EditText
+                                android:id="@+id/mEditSignatureofagent"
+                                android:hint="Signature of Agent"
+                                android:padding="5dp"
+                                android:background="@drawable/shape"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:lines="4"
+                                android:layout_marginLeft="10dp"
+                                android:maxLines="5" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/mTextSignatureofcustomer"
+                                android:text="Signature of Customer"
+                                android:layout_height="wrap_content"/>
+
+                            <EditText
+                                android:id="@+id/mEditSignatureofcustomer"
+                                android:hint="Signature of Customer"
+                                android:padding="5dp"
+                                android:background="@drawable/shape"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:lines="4"
+                                android:layout_marginLeft="10dp"
+                                android:maxLines="5"/>
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/mTextimage"
+                            android:text="Signature of Customer"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/clipboard"
+                            android:id="@+id/img1"
+                            />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+
+                            android:src="@drawable/clipboard"
+                            android:id="@+id/img2"
+                          />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/clipboard"
+                            android:id="@+id/img3"
+                         />
+
+                           </LinearLayout>
+
+
+                        <Button
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:text="Submit"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btn_corner"
+                            android:id="@+id/mButtonSubmit"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

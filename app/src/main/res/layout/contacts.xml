@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/topbg"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/back"
+            android:background="@drawable/leftarrow"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="contacts"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_below="@+id/back"
+            android:layout_marginLeft="30dp"
+            android:layout_height="match_parent"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="320dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-92dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+       <!-- <include
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/list"
+            android:layout_height="wrap_content"
+            layout="@layout/assigned_agent_calender_recycleview" />
+-->
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
